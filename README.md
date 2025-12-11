@@ -5,20 +5,13 @@ commits will follow this Format:
 
 VERSION.update.patch
 
-ALPHA version: 
-Terminal based, purely python.
+**ALPHA version:** Terminal based, Purely python.
 
-BETA version:
-Python app, basic UI
-Still purely python
+**BETA version:** Python app, Basic UI, Still purely python.
 
-version 1:
-Web app, basic UI
-Python backend, with HTML frontEnd
+**Version 1:** Web app, Basic UI, Python backend with HTML frontend.
 
-version 2:
-Web app, Final UI
-Same coding as verion 1
+**version 2:** Web app, Final UI, Same coding as verion 1.
 
 
 each update will have patchnotes
