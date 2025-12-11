@@ -19,3 +19,8 @@ version 1:
 version 2:
     Web app, Final UI
     same coding as verion 1
+
+
+each update will have patchnotes
+
+however patches will not have any patchnotes
