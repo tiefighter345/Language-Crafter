@@ -1,0 +1,11 @@
+Patch Notes:
+
+ALPHA.1.0: (10/12/25)
+    First additions, creation of new language and saving. 
+
+ALPHA.2.0: ()
+    Patch notes moved to seperate file
+    updated README information
+
+    Added basic editing of a language (adding and deleting paris of words)
+    Improved saving and loading of a language

@@ -1,6 +1,21 @@
 # Language-Crafter
 A custum dictionary creator.
 
-Patch Notes:
+commits will follow this Format:
 
-ALPHA.1.0: First additions, creation of new language and saving. (10/12/25)
+VERSION.update.patch
+
+ALPHA version: 
+    terminal based, purely python.
+
+BETA version:
+    python app, basic UI
+    Still purely python
+
+version 1:
+    Web app, basic UI
+    python backend, with HTML frontEnd
+
+version 2:
+    Web app, Final UI
+    same coding as verion 1
