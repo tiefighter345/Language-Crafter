@@ -6,19 +6,19 @@ commits will follow this Format:
 VERSION.update.patch
 
 ALPHA version: 
-    terminal based, purely python.
+Terminal based, purely python.
 
 BETA version:
-    python app, basic UI
-    Still purely python
+Python app, basic UI
+Still purely python
 
 version 1:
-    Web app, basic UI
-    python backend, with HTML frontEnd
+Web app, basic UI
+Python backend, with HTML frontEnd
 
 version 2:
-    Web app, Final UI
-    same coding as verion 1
+Web app, Final UI
+Same coding as verion 1
 
 
 each update will have patchnotes
