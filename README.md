@@ -1,5 +1,5 @@
 # Language-Crafter
-A custum dictionary creator.
+A custom dictionary creator.
 
 commits will follow this Format:
 
