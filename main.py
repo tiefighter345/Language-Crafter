@@ -66,6 +66,7 @@ def save_language(data):
     with open(f'languages/{name}.json', 'w') as language:
         json.dump(data, language)
 
+
 #Edit an existing language
 def edit_language():
     language = load_langauge()

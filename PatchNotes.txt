@@ -1,3 +1,26 @@
+commits will follow this Format:
+
+VERSION.update.patch
+
+ALPHA version:
+    Terminal based 
+    Purely python
+
+BETA version:
+    Python app
+    Basic UI
+    Still purely python
+
+Version 1: 
+    Web app 
+    Basic UI 
+    Python backend with typescript frontend
+
+version 2: 
+    Web app 
+    Final UI 
+    Same coding as verion 1
+
 Patch Notes:
 
 ALPHA.1: (10/12/25)
