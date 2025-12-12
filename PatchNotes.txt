@@ -32,3 +32,7 @@ ALPHA.2: (11/12/25)
 
     Added basic editing of a language (adding and deleting paris of words)
     Improved saving and loading of a language
+
+ALPHA.3: (12/12/25)
+    Added better menuing (don't need to relaunch for every action)
+    Made terminal interaction more user_friendly (less clutter)
