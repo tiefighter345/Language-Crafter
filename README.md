@@ -10,7 +10,7 @@ However patches will not have any patchnotes
 
 Current Version: ALPHA
 
-**How to use**:
+# How to use:
 
 download the main.py file.
 PLace it in a specific directory
