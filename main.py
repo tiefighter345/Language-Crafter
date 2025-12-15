@@ -91,15 +91,16 @@ def edit_language():
 
         #add new word
         if edit_action == "n":
-            print("What is the word in your language?")
+            print("What is the word in your language? (or type exit to cancel)")
             word = input(">")
+            
+            if word != "exit":
+                print("What is the word in English")
+                translation = input(">")
 
-            print("What is the word in English")
-            translation = input(">")
+                new_data = [word, translation]
 
-            new_data = [word, translation]
-
-            language["words"].append(new_data)
+                language["words"].append(new_data)
         
         #delete an existing word
         elif edit_action == "d":
@@ -108,7 +109,7 @@ def edit_language():
             for i in range(len(words)):
                 pair = words[i]
                 print(f"{i+1}: {pair[0]}, translating to: {pair[1]}")
-            print("Which pair do you want to delete? (number)")
+            print("Which pair do you want to delete? (number) or 'exit to exit")
             
             #exception catching loop
             flag1 = True
@@ -116,20 +117,23 @@ def edit_language():
             while flag1:        
                 while flag2:
                     selector = input(">")
-                    try: selector = int(selector)
-                    except: 
+                    if selector != "exit":
+                        try: selector = int(selector)
+                        except: 
+                            print("input a valid number")
+                        else: flag2 = False
+                if selector != "exit":
+                    if selector <= 0 or selector > len(words):
                         print("input a valid number")
-                    else: flag2 = False
-
-                if selector <= 0 or selector > len(words):
-                    print("input a valid number")
-                    flag2 = True
-                else:
-                    flag1 = False
-                    selector -= 1
+                        flag2 = True
+                    else:
+                        flag1 = False
+                        selector -= 1
             
             #delete chosen pair
-            words.pop(selector)
+            if word != "exit":
+                words.pop(selector)
+
         
         #exit the loop
         else:
