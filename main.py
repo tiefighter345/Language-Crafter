@@ -4,9 +4,9 @@ from os import listdir, makedirs, system
 from os.path import isfile, join, isdir
 from platform import system as os_check
 
+clear = ""
 #Check which os is being used for correct clearing of the terminal
 def check_os():
-    clear = ""
     if os_check() == "Windows":
         clear = "cls"
     elif os_check() == "Darwin" or os_check() == "Linux":
@@ -161,7 +161,7 @@ def Main():
     if not isdir("Languages"):
         makedirs("Languages")
 
-    clear = check_os()
+    check_os()
 
     #main loop
     running = True
