@@ -2,6 +2,13 @@
 import json
 from os import listdir, makedirs, system
 from os.path import isfile, join, isdir
+from platform import system as os_check
+
+clear = ""
+if os_check() == "Windows":
+    clear = "cls"
+elif os_check() == "Darwin" or os_check() == "Linux":
+    clear = "clear"
 
 #Load language
 def select_langauge():
@@ -38,7 +45,7 @@ def select_langauge():
             language_data = json.load(data)
             language_name = language_data["name"]
         
-        system("cls")
+        system(clear)
         print(f"you selected '{language_name}'")
         return language_data
     
@@ -67,10 +74,10 @@ def new_language():
             }
         
         save_language(data)
-        system("cls")
+        system(clear)
         print("Language created\n\n")
     
-    else: system("cls")
+    else: system(clear)
 
 
 #Edit an existing language
@@ -162,7 +169,7 @@ def Main():
             else:
                 print("please input a valid answer (n for new or e for edit, 'exit' to exit)")
 
-        system("cls")
+        system(clear)
         if user_input == "n":
             new_language()
         elif user_input == "e":
