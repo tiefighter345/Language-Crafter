@@ -4,11 +4,13 @@ from os import listdir, makedirs, system
 from os.path import isfile, join, isdir
 from platform import system as os_check
 
-clear = ""
-if os_check() == "Windows":
-    clear = "cls"
-elif os_check() == "Darwin" or os_check() == "Linux":
-    clear = "clear"
+#Check which os is being used for correct clearing of the terminal
+def check_os():
+    clear = ""
+    if os_check() == "Windows":
+        clear = "cls"
+    elif os_check() == "Darwin" or os_check() == "Linux":
+        clear = "clear"
 
 #Load language
 def select_langauge():
@@ -156,6 +158,8 @@ def Main():
     #Check for Languages folder
     if not isdir("Languages"):
         makedirs("Languages")
+
+    check_os()
 
     #main loop
     running = True
