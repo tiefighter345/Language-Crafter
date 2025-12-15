@@ -2,6 +2,11 @@ commits will follow this Format:
 
 VERSION.update.patch
 
+Each update will have patchnotes
+
+However patches will not have any patchnotes
+
+
 ALPHA version:
     Terminal based 
     Purely python
