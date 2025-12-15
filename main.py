@@ -11,6 +11,8 @@ def check_os():
         clear = "cls"
     elif os_check() == "Darwin" or os_check() == "Linux":
         clear = "clear"
+    
+    return clear
 
 #Load language
 def select_langauge():
@@ -159,7 +161,7 @@ def Main():
     if not isdir("Languages"):
         makedirs("Languages")
 
-    check_os()
+    clear = check_os()
 
     #main loop
     running = True
