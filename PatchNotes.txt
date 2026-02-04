@@ -41,3 +41,6 @@ ALPHA.2: (11/12/25)
 ALPHA.3: (12/12/25)
     Added better menuing (don't need to relaunch for every action)
     Made terminal interaction more user_friendly (less clutter)
+
+BETA.1: ()
+    Translated terminal app to GUI code using tkinter

@@ -3,8 +3,36 @@ import json
 from os import listdir, makedirs, system
 from os.path import isfile, join, isdir
 from platform import system as os_check
+import tkinter as tk
 
-clear = ""
+#Define global variables
+global clear
+
+#Alpha Setup, delete once beta version is complete.
+def Alpha_Setup():
+    check_os()
+    
+    #Check for Languages folder
+    if not isdir("Languages"):
+        makedirs("Languages")
+
+
+#Setup
+def setup():
+    check_os()
+
+    #Check for Languages folder
+    if not isdir("Languages"):
+        makedirs("Languages")
+    
+    #Set up the app window
+    window = tk.Tk()
+    window.title("Language Crafter")
+    window.geometry("400x200")
+
+    return window
+
+
 #Check which os is being used for correct clearing of the terminal
 def check_os():
     if os_check() == "Windows":
@@ -13,6 +41,7 @@ def check_os():
         clear = "clear"
     
     return clear
+
 
 #Load language
 def select_langauge():
@@ -154,14 +183,11 @@ def edit_language():
     save_language(language)
 
 
-def Main():
+#Alpha code, delete once beta version is complete.
+def Alpha_Main():
     print("Welcome to Language Crafter!")
     
-    #Check for Languages folder
-    if not isdir("Languages"):
-        makedirs("Languages")
-
-    check_os()
+    Alpha_Setup()
 
     #main loop
     running = True
@@ -183,6 +209,13 @@ def Main():
         else: running = False
 
     print("Goodbye")
+
+
+def Main():
+    window = setup()
+
+    window.mainloop()
+
 
 if __name__ == "__main__":
     Main()
