@@ -1,7 +1,6 @@
 # Language-Crafter
-A custom dictionary creator.
-
-Current Version: ALPHA
+## A custom dictionary creator.
+### Current Version: ALPHA
 
 # How to use:
 
